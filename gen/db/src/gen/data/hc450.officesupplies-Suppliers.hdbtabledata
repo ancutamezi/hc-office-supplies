@@ -1,0 +1,41 @@
+{
+  "format_version": 1,
+  "imports": [
+    {
+      "target_table": "HC450_OFFICESUPPLIES_SUPPLIERS",
+      "source_data": {
+        "data_type": "CSV",
+        "file_name": "hc450.officesupplies-Suppliers.csv",
+        "has_header": true,
+        "type_config": {
+          "delimiter": ","
+        }
+      },
+      "import_settings": {
+        "import_columns": [
+          "ID",
+          "IDENTIFIER",
+          "NAME",
+          "COUNTRY",
+          "POSTCODE",
+          "CITY",
+          "STREET",
+          "BUILDING",
+          "PHONE"
+        ],
+        "include_filter": []
+      },
+      "column_mappings": {
+        "ID": "ID",
+        "IDENTIFIER": "IDENTIFIER",
+        "NAME": "NAME",
+        "COUNTRY": "COUNTRY",
+        "POSTCODE": "POSTCODE",
+        "CITY": "CITY",
+        "STREET": "STREET",
+        "BUILDING": "BUILDING",
+        "PHONE": "PHONE"
+      }
+    }
+  ]
+}
