@@ -1,3 +1,4 @@
 
 # auto generated wildcard
 gen/db/.env
+node_modules
