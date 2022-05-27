@@ -1,0 +1,9 @@
+---
+applications:
+  - name: hc-office-supplies-srv
+    path: .
+    memory: 256M
+    buildpacks:
+      - nodejs_buildpack
+    services:
+      - hc-office-supplies-db

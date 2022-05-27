@@ -13,11 +13,11 @@ File or Folder | Purpose
 `readme.md` | this getting started guide
 
 
-## Next Steps
+## Steps
 
+- Create the service definition under srv folder (example: cat-service.cds)
 - Open a new terminal and run `cds watch` 
-- (in VS Code simply choose _**Terminal** > Run Task > cds watch_)
-- Start adding content, for example, a [db/schema.cds](db/schema.cds).
+- Open the url 'http://localhost:4004' and explore the available service endpoints
 
 
 ## Learn More
