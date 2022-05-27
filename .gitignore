@@ -1,5 +1,3 @@
 
 # auto generated wildcard
-gen
 gen/db/.env
-node_modules
