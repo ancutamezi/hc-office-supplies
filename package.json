@@ -2,7 +2,7 @@
     "name": "hc-office-supplies",
     "version": "1.0.0",
     "description": "Office supplies application",
-    "repository": "https://github.com/ancutamezi/hc-office-supplies/tree/add_ui",
+    "repository": "https://github.com/ancutamezi/hc-office-supplies/",
     "license": "UNLICENSED",
     "private": true,
     "dependencies": {
