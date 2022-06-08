@@ -1,8 +1,8 @@
 {
     "name": "hc-office-supplies",
     "version": "1.0.0",
-    "description": "A simple CAP project.",
-    "repository": "<Add your repository here>",
+    "description": "Office supplies application",
+    "repository": "https://github.com/ancutamezi/hc-office-supplies/tree/add_ui",
     "license": "UNLICENSED",
     "private": true,
     "dependencies": {
