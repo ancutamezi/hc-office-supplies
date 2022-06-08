@@ -1,4 +1,4 @@
-# Developing applications running on SAP BTP using SAP HANA Cloud
+# Developing applications running on SAP BTP using SAP HANA Cloud
 
 ## Description
 
@@ -50,26 +50,26 @@ Steps for creating the Office Supplies Application
 * 7. Calling a Stored Procedure  
 
 * Unit 9 – Introducing the Node.js Module. Exercises (recordings/Unit_9) add_cap_function branch
-* 1. Function implemented as Stored Procedure
+* 8. Function implemented as Stored Procedure
 
  # Session 3          
  
 * Unit 10 – Introducing Event Handlers for Custom Logic (recordings/Unit_10) add_custom handlers branch
-* 2. Define custom handlers and test 
+* 1. Define custom handlers and test 
          
 * Unit 11 – Creating the UI using UI5 (recordings/Unit_11) add_ui branch
-* 3. Using Built in capabilities for SAP Fiori 
-* 4. Setup a Fiori Launchpad Sandbox
+* 2. Using Built in capabilities for SAP Fiori 
+* 3. Setup a Fiori Launchpad Sandbox
               
 * Unit 12 – Defining Application Security (recordings/Unit_12) add_app_security branch
-* 5. Define Restrictions and Roles in CDS
-* 6. Set Up SAP Authorization and Trust Management
-* 7. Create an Approuter
-* 8. Add the Ui and Approuter Module to the MTA
-* 9. Assign Role Collections
+* 4. Define Restrictions and Roles in CDS
+* 5. Set Up SAP Authorization and Trust Management
+* 6. Create an Approuter
+* 7. Add the Ui and Approuter Module to the MTA
+* 8. Assign Role Collections
 
 * Unit 13 – Introducing the Job Scheduling service (recordings/Unit_13) add_job_config branch
-* 10. Create and schedule a job
+* 9. Create and schedule a job
 
 
 The master branch is just the skeleton of project generated in Unit 2 and 3. 
@@ -80,4 +80,9 @@ Each Unit exercises has the a recording in the recordings folder at the root lev
 For displaying all the branches run `git branch`. For navigating to a specific branch run un `git checkout branch_name`.
 On each branch do the initial step: `npm install`.
 
+
+# Troubleshooting
+
+1. Note that during your trial, your instance will be automatically stopped overnight, according to the server region time zone. That means you need to restart your instance before starting to work on trial the next day.
+2. After running `cds build/all` you will have to bind your hc-office-spplies-db hdi.
 
