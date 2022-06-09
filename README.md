@@ -1,16 +1,13 @@
-## Steps
+## Implementation details
 
-- Register 2 new custom handlers in cat-service.js, both are .after. 
-1. On reading the Products entity it will provide the list of products read with a string. Example: Read Product: 37f028f0-1dd5-30ae-9cdd-a7f543e4d61d
-2. On Create, update, Delete of an entry in Products we will emit a message with string. Example: < emitting: product_Changed a9fe4b01-ccd3-4369-821c-291a7552dffb
-- Create a new folder at the root level called tests. 
-- Create a new file inside the tests folder called Products.http. This will use the inbuilt rest client to test the Get and Post operations, as Post is not possible in browser
-- Run `cds build/all`
-- Open a new terminal and run `cds watch` or `cds run`
-- On the Products.http file press send request for each crud operation and notice the responses and also the messages in the console.
+1. The plan on this branch is to first setup a Fiori Launchpad sandbox and then generate a Fiori application using the List Report Elements Wizard
 
+1. A new file resource/index.html was created in the app folder. In this fie, in the applications folder we configure the tiles of the launchpad.
+For testing just run `cds watch`, open the localhost link and navigate to the Web Applications section: /resources/index.html. 
 
+2. Generate the Fiori List Report application
+- Go to View -> find command -> Explore and Install Generators -> search for fiori -> install @sap/generator-fiori
+- Go to View -> find command -> Run Generator -> choose @sap/fiori:app -> choose SAP Fiori Elements -> List Report Object Page -> Press Next and fill all the needed information for your Fiori Application. It will be based on your odata service (cat-service).
 
-## Learn More
-
-Learn more at https://cap.cloud.sap/docs/get-started/.
+For testing just run `cds watch`, open the localhost link and navigate to the Web Applications section: /officesuppliesapp/webapp/index.html. 
+If you want to display the new generated Fiori application in you Fiori Launchpad Sandbox you will have to add your application in the application section of the resources/index.html.

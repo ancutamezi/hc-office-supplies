@@ -2,7 +2,7 @@
   "name": "hc-office-supplies",
   "version": "1.0.0",
   "description": "A simple CAP project.",
-  "repository": "<Add your repository here>",
+  "repository": "https://github.com/ancutamezi/hc-office-supplies/",
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
@@ -13,6 +13,10 @@
     "sap-hdbext-promisfied": "^2.202108.1"
   },
   "devDependencies": {
+    "@sap/eslint-plugin-ui5-jsdocs": "^2.0.5",
+    "@sap/ux-specification": "^1.100.4",
+    "@sapui5/ts-types": "^1.92.2",
+    "eslint": "^7.32.0",
     "sqlite3": "^5.0.2"
   },
   "scripts": {
@@ -52,5 +56,11 @@
     "hana": {
       "deploy-format": "hdbtable"
     }
-  }
+  },
+  "sapux": [
+    "app/officesuppliesapp",
+    "app/productsapp",
+    "app/fiorios",
+    "app/officesuppliesapp"
+  ]
 }
