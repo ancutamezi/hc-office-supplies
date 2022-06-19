@@ -43,3 +43,24 @@ resources:
       service-plan: hdi-shared
     properties:
       hdi-service-name: ${service-name}
+
+# ------------------------------------------------------------
+  - name: hc-office-supplies-xsuaa
+# ------------------------------------------------------------
+    type: org.cloudfoundry.managed-service
+    parameters:
+      service-plan: application
+      service: xsuaa
+      path: ./xs-security.json
+      config:
+        xsappname: 'hs-office-supplies-${space}'
+        role-collections:
+          - name: 'Vendor-${space}'
+            description: Read Access
+            role-template-references:
+              - $XSAPPNAME.Vendor
+          - name: 'ProcurementManager-${space}'
+            description: All Access
+            role-template-references:
+              - $XSAPPNAME.ProcurementManager
+
