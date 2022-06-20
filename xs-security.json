@@ -1,4 +1,6 @@
-{
+{     
+  "xsappname": "hc-office-supplies",
+  "tenant-mode": "dedicated",
   "scopes": [
     {
       "name": "$XSAPPNAME.Vendor",

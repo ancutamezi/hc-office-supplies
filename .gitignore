@@ -1,3 +1,6 @@
 
 # auto generated wildcard
-gen/db/.env
+gen
+node_modules
+mta_archives
+approuter/node_modules

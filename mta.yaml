@@ -26,6 +26,8 @@ modules:
           srv-url: ${default-url}
     requires:
       - name: hc-office-supplies-db
+      - name: hc-office-supplies-xsuaa
+      - name: hc-office-supplies-destination
 
   - name: hc-office-supplies-db-deployer
     type: hdb
@@ -34,6 +36,35 @@ modules:
       buildpack: nodejs_buildpack
     requires:
       - name: hc-office-supplies-db
+      - name: hc-office-supplies-xsuaa
+
+# ------------------------------------------------------------      
+  - name: hc-office-supplies-approuter
+# ------------------------------------------------------------  
+    type: nodejs
+    path: approuter
+    requires:
+      - name: hc-office-supplies-xsuaa
+      - name: srv-api
+        group: destinations
+        properties:
+          forwardAuthToken: true
+          strictSSL: true
+          name: srv-binding
+          url: '~{srv-url}'
+    build-parameters:
+          requires:
+            - name: hc-office-supplies-app
+              artifacts:
+                - ./*
+              target-path: resources
+# ------------------------------------------------------------
+  - name: hc-office-supplies-app
+# ------------------------------------------------------------  
+    type: html5
+    path: app
+    build-parameters:
+      supported-platforms: []
 
 resources:
   - name: hc-office-supplies-db
@@ -63,4 +94,11 @@ resources:
             description: All Access
             role-template-references:
               - $XSAPPNAME.ProcurementManager
+# ------------------------------------------------------------  
+  - name: hc-office-supplies-destination
+# ------------------------------------------------------------  
+    type: org.cloudfoundry.managed-service
+    parameters:
+      service: destination
+      service-plan: lite
 
