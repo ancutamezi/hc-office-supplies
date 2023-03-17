@@ -9,5 +9,6 @@ For testing just run `cds watch`, open the localhost link and navigate to the We
 - Go to View -> find command -> Explore and Install Generators -> search for fiori -> install @sap/generator-fiori
 - Go to View -> find command -> Run Generator -> choose @sap/fiori:app -> choose SAP Fiori Elements -> List Report Object Page -> Press Next and fill all the needed information for your Fiori Application. It will be based on your odata service (cat-service).
 
-For testing just run `cds watch`, open the localhost link and navigate to the Web Applications section: /officesuppliesapp/webapp/index.html. 
+For testing just run `npm install`, followed by `cds deploy --to hana` and then `cds watch --profile hybrid`
+open the localhost link and navigate to the Web Applications section: /officesuppliesapp/webapp/index.html. 
 If you want to display the new generated Fiori application in you Fiori Launchpad Sandbox you will have to add your application in the application section of the resources/index.html.

@@ -1,0 +1,21 @@
+{
+  "requires": {
+    "[hybrid]": {
+      "db": {
+        "binding": {
+          "type": "cf",
+          "apiEndpoint": "https://api.cf.eu10-004.hana.ondemand.com",
+          "org": "myOrg-8f016a09-1e5e-47b8-a909-20690393a196-oi9lqu94exvqre4",
+          "space": "dev",
+          "instance": "hc-office-supplies-db",
+          "key": "hc-office-supplies-db-key",
+          "resolved": false
+        },
+        "kind": "hana",
+        "vcap": {
+          "name": "db"
+        }
+      }
+    }
+  }
+}
